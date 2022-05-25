@@ -31,8 +31,8 @@ img {
 }
 
 .country-list1 {
-  padding: 5px;
-  border: 1px solid grey;
+  padding: 8px;
+  border: 1px solid #008585;
   border-radius: 10px;
   margin-right: 10px;
   margin-left: auto;
@@ -40,8 +40,8 @@ img {
 }
 
 .country-list2 {
-  padding: 5px;
-  border: 1px solid grey;
+  padding: 8px;
+  border: 1px solid #008585;
   border-radius: 10px;
   margin-right: auto;
   
