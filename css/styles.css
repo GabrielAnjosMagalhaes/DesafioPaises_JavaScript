@@ -1,5 +1,10 @@
 body {
   padding: 10px;
+  background: linear-gradient(100deg,#005555, #000555);
+  min-height: 100vh;
+  
+  color:aliceblue ;
+  text-align: center;
 }
 
 img {
@@ -32,4 +37,14 @@ img {
   border: 1px solid grey;
   border-radius: 10px;
   margin-right: 10px;
+}
+
+.titulo{
+  font-size: 50px;
+  transition: 0.85s ease all;
+  
+}
+.titulo:hover{
+font-size: 55px;
+color: rgb(40, 199, 199);
 }
