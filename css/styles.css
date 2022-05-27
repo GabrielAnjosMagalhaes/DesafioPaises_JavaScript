@@ -79,7 +79,7 @@ color: rgb(40, 199, 199);
   padding: 10px 25px;
   outline: none;
   font-size: 1.1em;
-  color: aliceblue;
+  
   text-align: center;
   background: linear-gradient(150deg,#005555, #0006550e);
   box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.1),
@@ -92,10 +92,17 @@ color: rgb(40, 199, 199);
 
 }
 
-.pesquisa input::placeholder{
+
+.pesquisa input::placeholder,
+.pesquisa input{
   color: transparent;
 }
 
+
+.pesquisa:hover input::placeholder,
+.pesquisa:hover input{
+  color: aliceblue;
+}
 
 .pesquisa::before{
   content: "";
@@ -103,7 +110,7 @@ color: rgb(40, 199, 199);
   top: 0;
   left: 0;
   width: 10px;
-  height: 84%;
+  height: 90%;
   background: linear-gradient(#019292, #017e7e, #006969);
   z-index: 1;
   fill: blur(1px);
@@ -114,8 +121,8 @@ color: rgb(40, 199, 199);
     top: 0;
     right: -1px;
     width: 10px;
-    height: 84%;
-    background:aliceblue;
+    height: 90%;
+    background:linear-gradient(#019292, #017e7e, #006969);
     z-index: 1;
     fill: blur(1px);
   }

@@ -1,5 +1,4 @@
 //Variáveis de estado (no momento global)
-
 //Definirão em qual aba estamos trabalhando
 let tabCountries = null;
 let tabFavorites = null;
