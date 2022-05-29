@@ -235,5 +235,40 @@ function pesquisar(){
 
 
   
+// botões separação continente
 
+// Buscando continente Asia
+function Asia(){
+console.log("ok! 1")
+}
+
+// Buscando continente Europa
+function Europa(){
+  console.log("ok! 2")
+}
+
+// Buscando continente Africa
+function Africa(){
+  console.log("ok! 3")
+}
+
+// Buscando continente Oceania
+function Oceania(){
+  console.log("ok! 4")
+}
+
+// Buscando continente Americas
+function Americas(){
+  console.log("ok! 5")
+}
+
+// Buscando continente Polar
+function Polar(){
+  console.log("ok! 6")
+}
+
+// Buscando continente OceanoAntartico
+function OceanoAntartico(){
+  console.log("ok! 7")
+}
 
