@@ -3,7 +3,29 @@ body {
   background: linear-gradient(100deg,#005555, #000555);
   min-height: 100vh; 
   color:aliceblue ;
+  text-align: center;
 }
+
+.pesquisar{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+   
+  background-color: #005555;
+  border-color: #005555;
+  color: aliceblue;
+  border-radius: 15px;
+  width: 15%;
+  min-height: 45px;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  transition: .5s ease all;
+}
+
+.pesquisar:hover{
+  background-color: #146666;
+    border-radius: 5px;
+}
+
 
 img {
   width: 50px;

@@ -218,6 +218,22 @@ function formatNumber(number) {
   return numberFormat.format(number);
 }
 
+function pesquisar(){
+    let procurado = document.querySelector("#procurar")
+    let txtprocurado = procurado.value
 
+    if (abc == txtprocurado){
+      allCountries == abc
+    }else{
+      alert(`Não existe um país com o nome de ${txtprocurado}`)
+    }
+
+
+
+    console.log(txtprocurado)
+ }
+
+
+  
 
 
