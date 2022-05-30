@@ -49,17 +49,19 @@ async function fetchCountries() {
   allCountries = json.map(country => {
 
     //destructuring para simplificar a atribuição a constantes
-    const { numericCode, translations, population, flag } = country;
+    const { numericCode, translations, population, flag, region } = country;
 
     return {
       id: numericCode,
       name: translations.br, //ainda é um objeto que precisei acesar .br
       population,
       formattedPopulation: formatNumber(population),
-      flag
+      flag,
+      region
     }
+    
   });
-
+  allbkp = allCountries
   render();
 }
 
@@ -219,56 +221,64 @@ function formatNumber(number) {
 }
 
 function pesquisar(){
-    let procurado = document.querySelector("#procurar")
-    let txtprocurado = procurado.value
-
-    if (abc == txtprocurado){
-      allCountries == abc
-    }else{
-      alert(`Não existe um país com o nome de ${txtprocurado}`)
-    }
-
-
-
-    console.log(txtprocurado)
+ var pesquisado = document.getElementById("procurar")
+ var pesquisadotexto = pesquisado.value
+ if(pesquisadotexto == ""){
+  alert("Por favor escreva um nome válido!")
+ }else{
+  allCountries = allbkp.filter(country => country.name == pesquisadotexto);
+  render()
  }
 
-
+}
   
 // botões separação continente
 
 // Buscando continente Asia
 function Asia(){
-console.log("ok! 1")
+allCountries = allbkp.filter(country => country.region === "Asia");
+render()
+
 }
 
 // Buscando continente Europa
 function Europa(){
-  console.log("ok! 2")
+  allCountries = allbkp.filter(country => country.region === "Europe");
+  render()
+  
 }
 
 // Buscando continente Africa
 function Africa(){
-  console.log("ok! 3")
+  allCountries = allbkp.filter(country => country.region === "Africa");
+  render()
+
 }
 
 // Buscando continente Oceania
 function Oceania(){
-  console.log("ok! 4")
+  
+  allCountries = allbkp.filter(country => country.region === "Oceania");
+  render()
 }
 
 // Buscando continente Americas
 function Americas(){
-  console.log("ok! 5")
+  allCountries = allbkp.filter(country => country.region === "Americas");
+  render()
 }
 
 // Buscando continente Polar
 function Polar(){
-  console.log("ok! 6")
+  allCountries = allbkp.filter(country => country.region === "Polar");
+  render()
+  
 }
 
 // Buscando continente OceanoAntartico
 function OceanoAntartico(){
-  console.log("ok! 7")
+  allCountries = allbkp.filter(country => country.region === "Antarctic Ocean");
+  render()
+ 
 }
 
