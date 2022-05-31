@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+.continente{
+  background-color: #005555;
+  color: aliceblue;
+}
 .pesquisar{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: medium;
